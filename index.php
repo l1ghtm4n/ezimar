@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <?php include 'include/inc_head.php'?>
+    <?php include 'include/inc_head.php' ?>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-    <?php include 'include/inc_header.php'?>
+    <?php include 'include/inc_header.php' ?>
 
-    <?php include 'include/inc_sidebar.php'?>
+    <?php include 'include/inc_sidebar.php' ?>
 
     <div class="content-wrapper" style="min-height: 1036px;">
         <section class="content">
@@ -48,7 +48,9 @@
                                             <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Thêm sản phẩm
                                                 <span class="fa fa-caret-down"></span></button>
                                             <ul class="dropdown-menu">
-                                                <li><a href="#" data-toggle="modal" data-target="#modalChienDich">Thêm mới</a></li>
+                                                <li>
+                                                    <a href="#" data-toggle="modal" data-target="#modalChienDich">Thêm mới</a>
+                                                </li>
                                                 <li><a href="#">Thêm từ kho</a></li>
                                             </ul>
                                         </div>
@@ -154,112 +156,62 @@
 
                 <!-- Modal content-->
                 <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Thêm sản phẩm mới</h4>
+                    </div>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-4">
-                                <p class="">
-                                    Ảnh Sản phẩm
-                                </p>
-                                <div class="">
-                                    <div class="">
-                                        <div>
-                                            <i class="material-icons">backup</i>
-                                            <p class="center">
-                                                Thêm ảnh có định dạng JPEG, JPG, PNG
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="a_ccamp_field_images_product w_ccamp_field_images_product valign-wrapper" style="">
-                                        <div class="a_ccamp_field_images_product_overlay w_ccamp_field_images_product_overlay" title="Thay ảnh sản phẩm">
-                                            <a class="a_ccamp_field_changeimg w_ccamp_field_changeimg">
-                                                <i class="material-icons">swap_horiz</i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                <div>Ảnh Sản phẩm</div>
+                                <div class="preview-image">
+                                    <i class="material-icons icon-backup">backup</i>
+                                    <p class="center">
+                                        Thêm ảnh có định dạng JPEG, JPG, PNG
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        Tên Sản phẩm<span>*</span> :
-                                        <i class="fa fa-info-circle"></i>
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="email">Tên sản phẩm:</label>
+                                        <input type="text" class="form-control" id="product_name">
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="input-field a_ccamp_field_content">
-                                            <input type="text" class="ezimar-input" data-length="50" maxlength="50" name="name" value="">
-                                            <span class="character-counter" style="float: right; font-size: 11px; height: 1px;"></span>
-                                        </div>
+                                    <div class="form-group">
+                                        <label>Mã sản phẩm:</label>
+                                        <input type="text" class="form-control" id="product_id">
                                     </div>
-                                </div>
-                                <div class="row a_ccamp_field c_mar_bot_10">
-                                    <div class="col m4 a_ccamp_field_title">
-                                        Mã Sản phẩm :
-                                        <i class="fa fa-info-circle a_ccamp_field_info"></i>
+                                    <div class="form-group">
+                                        <label>Nhà cung cấp:</label>
+                                        <input type="text" class="form-control" id="provider">
                                     </div>
-                                    <div class="col m8">
-                                        <div class="input-field a_ccamp_field_content">
-                                            <input type="text" class="ezimar-input" data-length="10" maxlength="10" name="code" value="">
-                                            <span class="character-counter" style="float: right; font-size: 11px; height: 1px;"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row a_ccamp_field c_mar_bot_10">
-                                    <div class="col m4 a_ccamp_field_title">
-                                        Nhà cung cấp :
-                                        <i class="fa fa-info-circle a_ccamp_field_info"></i>
-                                    </div>
-                                    <div class="col m8">
-                                        <div class="input-field a_ccamp_field_content">
-                                            <input type="text" class="ezimar-input" data-length="50" maxlength="50" name="supplier" value="">
-                                            <span class="character-counter" style="float: right; font-size: 11px; height: 1px;"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row a_ccamp_field c_mar_bot_10">
-                                    <div class="col m4 a_ccamp_field_title">
-                                        Giá thành :
-                                        <i class="fa fa-info-circle a_ccamp_field_info"></i>
-                                    </div>
-                                    <div class="col m8">
-                                        <div class="a_ccamp_field_budget left">
-                                            <input type="text" class="ezimar-input w_ccamp_input_money" name="price" value="">
-                                        </div>
-                                        <div class="input-field a_ccamp_field_currency left">
-                                            <div class="select-wrapper">
-                                                <span class="caret">▼</span><input type="text" class="select-dropdown" readonly="true" data-activates="select-options-6f5f571b-79bc-fe6d-6dab-540f6c46ad61" value="VND">
-                                                <ul id="select-options-6f5f571b-79bc-fe6d-6dab-540f6c46ad61" class="dropdown-content select-dropdown ">
-                                                    <li class=""><span>VND</span></li>
-                                                    <li class=""><span>USD</span></li>
-                                                </ul>
-                                                <select name="currency" data-select-id="6f5f571b-79bc-fe6d-6dab-540f6c46ad61" class="initialized">
-                                                    <option value="1">VND</option>
-                                                    <option value="2">USD</option>
+                                    <div class="form-group">
+                                        <label>Giá thành</label>
+                                        <div class="row">
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control pull-left" id="provider">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <select class="form-control pull-right" id="sel1">
+                                                    <option>VND</option>
+                                                    <option>USD</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row a_ccamp_field c_mar_bot_10">
-                                    <div class="col m4 a_ccamp_field_title">
-                                        Mô tả :
-                                        <i class="fa fa-info-circle a_ccamp_field_info"></i>
+                                    <div class="form-group">
+                                        <label>Mô tả:</label>
+                                        <input type="text" class="form-control" id="description">
                                     </div>
-                                    <div class="col m8">
-                                        <div class="input-field a_ccamp_field_content a_ccamp_field_textarea">
-                                            <textarea class="materialize-textarea ezimar-input" data-length="250" maxlength="250" name="description"></textarea>
-                                            <span class="character-counter" style="float: right; font-size: 11px; height: 1px;"></span>
-                                        </div>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
-                        <button type="button" class="btn btn-success" >Lưu</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Lưu</button>
                     </div>
                 </div>
-
             </div>
         </div>
 
