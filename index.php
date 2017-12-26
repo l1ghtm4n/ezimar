@@ -78,7 +78,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="" class="col-md-3 control-label">Ngân sách dự kiến :</label>
-                                    <div class="col-md-3" style="width: 240px;">
+                                    <div class="col-md-4" style="width: 240px;">
                                         <div class="radio pull-left" style="margin-right: 10px">
                                             <label>
                                                 <input type="radio" name="" id="optionsRadios1" value="option1"> Toàn chiến dịch
@@ -90,9 +90,9 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
-                                        <input type="text" class="form-control pull-left" placeholder="100.000" style="width:100px;text-align:right;">
-                                        <select class="form-control pull-left" style="width:80px;text-align:right;">
+                                    <div class="col-md-5">
+                                        <input type="text" class="form-control input-sm pull-left" placeholder="100.000" style="width:130px;text-align:right;">
+                                        <select class="form-control input-sm pull-left" style="width:80px;text-align:right; margin-left: 10px;">
                                             <option>VND</option>
                                             <option>USD</option>
                                         </select>
@@ -100,7 +100,11 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="" class="col-md-3 control-label">Kênh quảng cáo :</label>
-                                    <div class="col-md-4" id="append-val">
+                                    <div class="col-md-9" id="append-val">
+                                        <!-- box list-->
+
+                                        <!-- end box list-->
+
                                     </div>
                                 </div>
                                 <div class="form-group">
